@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Giỏ hàng </title>
+
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
+        rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<script src="cart.js"></script>
+
+<body>
+    <div id="navbar" style="background:none; position: relative;" >
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" width="125px"></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="products.html">Sản phẩm</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+                <li><a href="account.html">Tài khoản</a></li>
+            </ul>
+        </nav>
+        <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+    <!-----------cart items details--------->
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Sản phẩm</th>
+                <th>Số lượng</th>
+                <th>Tạm tính</th>
+            </tr>
+            <tr id="row1">
+                <td >
+                    <div class="cart-info">
+                        <a href="product-detail.html"><img src="images/buy-1.jpg"></a>
+                        <div>
+                            <a href="product-detail.html">
+                                <p>T-Shirt in Đỏ</p>
+                            </a>
+                            <small>Giá: $50.00</small>
+                            <br>
+                            <div onclick="rmFunction1()" class="rmbtn">Xóa khỏi giỏ</div>
+                        </div>
+                    </div>
+                </td>
+                <td>                   
+                    <img src="images\minus.png" style="width: 30px; height:30px; cursor: pointer;" onclick="minusFunction1()">
+                    <input type="" onchange="changeFunction1()" min="0" class="item1-quantity" value="1">
+                    <img src="images\add.png" style="width: 30px; height:30px; cursor: pointer;" onclick="plusFunction1()">                  
+                </td>
+                <td class="price1">$50.00</td>
+            </tr>
+            <tr id="row2">
+                <td>
+                    <div class="cart-info">
+                        <img src="images/buy-2.jpg">
+                        <div>
+                            <p>Giày chạy bộ Đen</p>
+                            <small>Giá: $75.00</small>
+                            <br>
+                            <div class="rmbtn" onclick="rmFunction2()" >Xóa khỏi giỏ</div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <img src="images\minus.png" style="width: 30px; height:30px;cursor: pointer;" onclick="minusFunction2()">
+                    <input type=""  min="0" class="item2-quantity" value="1">
+                    <img src="images\add.png" style="width: 30px; height:30px;cursor: pointer;" onclick="plusFunction2()">                  
+                </td>
+                <td class="price2">$75.00</td>
+            </tr>
+            <tr id="row3">
+                <td>
+                    <div class="cart-info">
+                        
+                        <img src="images/buy-3.jpg">
+                        <div>
+                            <p>Quần dài Xám</p>
+                            <small>Giá: $75.00</small>
+                            <br>
+                            <div class="rmbtn" onclick="rmFunction3()">Xóa khỏi giỏ</div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <img src="images\minus.png" style="width: 30px; height:30px;cursor: pointer;" onclick="minusFunction3()">
+                    <input type="" min="0" class="item3-quantity" value="1">
+                    <img src="images\add.png" style="width: 30px; height:30px;cursor: pointer;" onclick="plusFunction3()">                 
+                </td>
+                <td class="price3">$75.00</td>
+            </tr>
+        </table>
+        <div class="total-price">
+            <table>
+                <tr >
+                    <td>Tạm tính</td>
+                    <td class="subtotal">$200.00</td>
+                </tr>
+                <tr>
+                    <td>Phí vận chuyển</td>
+                    <td>$35.00</td>
+                </tr>
+                <tr>
+                    <td>Tổng cộng</td>
+                    <td class="total">$235</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <div class="button" class="button" onclick="buyFunction()">Mua ngay</div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+<!-- ----modal=== -->
+<div id="modalbox" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+    <form class="modal-content">
+      <div class="container-mdb">
+        <h1>Xác nhận đặt hàng</h1>
+        <p>Bạn xác nhận mua hàng?</p>
+      
+        <div class="clearfix">
+          <div class="button" onclick="document.getElementById('modalbox').style.display='none'" class="cancelbtn">Hủy</div>
+          <div class="button yes" onclick="confirm()" class="deletebtn">Tiếp tục</div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div id="modalbox2" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+    <form class="modal-content">
+      <div class="container-mdb">
+        <h1>Cám ơn bạn đã đặt hàng</h1>
+        <p>Chúc bạn mua sắm vui vẻ</p>
+      
+        <div class="clearfix">
+          <div class="button" onclick="document.getElementById('modalbox2').style.display='none'" class="cancelbtn">Đóng</div>
+        </div>
+      </div>
+    </form>
+  </div>
+    <!---------footer----------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Tải ứng dụng của chúng tôi</h3>
+                    <p>Tải ứng dụng cho thiết bị di động Android và IOS</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo.png">
+                    <p>Mục đính của chúng tôi là muốn mọi người có thể tiếp cận tới niềm vui và lợi ích của việc tập
+                        luyện thể thao</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Đường dẫn hữu ích</h3>
+                    <ul>
+                        <li>Giảm giá</li>
+                        <li>Blog</li>
+                        <li>Chính sách đổi trả</li>
+                        <li>Diễn đàn</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Theo dõi chúng tôi</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020</p>
+        </div>
+    </div>
+<script src="index.js"></script>
+</body>
+
+</html>
+
+</html>

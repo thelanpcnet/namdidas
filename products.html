@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tất cả sản phẩm </title>
+
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
+        rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="navbar" style="background: white;">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" width="125px"></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="products.html">Sản phẩm</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+                <li><a href="account.html">Tài khoản</a></li>
+            </ul>
+        </nav>
+        <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+
+    <div class="small-container">
+
+        <div class="row row-2">
+            <h2>Tất cả sản phẩm</h2>
+            <select>
+                <option>Lọc mặc định</option>
+                <option>Lọc theo giá tiền</option>
+                <option>Lọc theo độ phổ biến</option>
+                <option>Lọc theo đánh giá</option>
+                <option>Lọc theo giảm giá</option>
+            </select>
+        </div>
+        <div class="row">
+            <div class="row">
+                <div class="col-4">
+                    <a href="product-detail.html">
+                        <img src="images/product-1.jpg">
+                        <h4>T-Shirt in Đỏ</h4>
+                        <div class="rating">
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star-empty"></i>
+                        </div>
+                        <p>$50.00</p>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-2.jpg">
+                    <h4>Giày chạy bộ Đen</h4>
+                    <div class="rating">
+                        <i class="icon-star"></i>
+                        <i class="icon-star"></i>
+                        <i class="icon-star"></i>
+                        <i class="icon-star"></i>
+                        <i class="icon-star-empty"></i>
+                    </div>
+                    <p>$75.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-3.jpg">
+                    <h4>Quần dài Xám</h4>
+                    <div class="rating">
+                        <i class="icon-star"></i>
+                        <i class="icon-star"></i>
+                        <i class="icon-star"></i>
+                        <i class="icon-star"></i>
+                        <i class="icon-star-empty"></i>
+                    </div>
+                    <p>$75.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-4.jpg">
+                    <h4>Polo Shirt Xanh Đen</h4>
+                    <div class="rating">
+                        <i class="icon-star"></i>
+                        <i class="icon-star"></i>
+                        <i class="icon-star"></i>
+                        <i class="icon-star"></i>
+                        <i class="icon-star-empty"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="images\product-5.jpg">
+                <h4>Giày cổ cao Xám</h4>
+                <div class="rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star-empty"></i>
+                </div>
+                <p>$100.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-6.jpg">
+                <h4>T-Shirt in Đen</h4>
+                <div class="rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star-empty"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-7.jpg">
+                <h4>Vớ HRX</h4>
+                <div class="rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star-empty"></i>
+                </div>
+                <p>$15.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-8.jpg">
+                <h4>Đồng hồ Fossil Đen</h4>
+                <div class="rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star-empty"></i>
+                </div>
+                <p>$200.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-9.jpg">
+                <h4>Đồng hồ Roadster Đen</h4>
+                <div class="rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star-empty"></i>
+                </div>
+                <p>$250.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-10.jpg">
+                <h4>Giày chạy bộ Đen - đế Cam</h4>
+                <div class="rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star-empty"></i>
+                </div>
+                <p>$150.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-11.jpg">
+                <h4>Giày chạy bộ Xám</h4>
+                <div class="rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star-empty"></i>
+                </div>
+                <p>$100.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-12.jpg">
+                <h4>Quần dài Đen</h4>
+                <div class="rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star-empty"></i>
+                </div>
+                <p>$75.00</p>
+            </div>
+        </div>
+        <div class="page-btn">
+            <span style=" background: #ff523b; color: #fff;">1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
+        </div>
+    </div>
+
+
+    <!---------footer----------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Tải ứng dụng của chúng tôi</h3>
+                    <p>Tải ứng dụng cho thiết bị di động Android và IOS</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo.png">
+                    <p>Mục đính của chúng tôi là muốn mọi người có thể tiếp cận tới niềm vui và lợi ích của việc tập
+                        luyện thể thao</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Đường dẫn hữu ích</h3>
+                    <ul>
+                        <li>Giảm giá</li>
+                        <li>Blog</li>
+                        <li>Chính sách đổi trả</li>
+                        <li>Diễn đàn</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Theo dõi chúng tôi</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020</p>
+        </div>
+    </div>
+  
+    <script src="index.js"></script>
+</body>
+
+</html>

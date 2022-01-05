@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Chi tiết sản phẩm </title>
+
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
+        rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="navbar" style="position: relative; background-color: red;">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" width="125px"></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="products.html">Sản phẩm</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+                <li><a href="account.html">Tài khoản</a></li>
+            </ul>
+        </nav>
+        <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+    <!-- detail -->
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img id="productimgmain" src="images\gallery-1.jpg" width="100%" ">
+                <div class=" small-img-row">
+                <div class="small-img-col">
+                    <img class="subimg" src="images\gallery-1.jpg" width="100%">
+                </div>
+                <div class="small-img-col">
+                    <img class="subimg" src="images\gallery-2.jpg" width="100%">
+                </div>
+                <div class="small-img-col">
+                    <img class="subimg" src="images\gallery-3.jpg" width="100%">
+                </div>
+                <div class="small-img-col">
+                    <img class="subimg" src="images\gallery-4.jpg" width="100%">
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <p>Trang chủ / T-Shirt</p>
+            <h1>T-Shirt in Đỏ</h1>
+            <h4>$50.00</h4>
+            <select name="" id="">
+                <option>Lựa chọn Size</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+                <option>XXL</option>
+            </select>
+            <img src="images\minus.png" style="width: 30px; height:30px;cursor: pointer;" onclick="minusFunction()">
+            <input type="" name="" id="soluong" value="1">
+            <img src="images\add.png" style="width: 30px; height:30px;cursor: pointer;" onclick="plusFunction()"> <br>
+            <a href="cart.html" class="button">Thêm vảo giỏ hàng</a>
+            <a href="cart.html" class="button">Mua ngay</a>
+            <h3>Thông tin sản phẩm</h3>
+            <p>Ngày này, áo thun tay lỡ Unisex form rộng đang ngày càng trở nên phổ biến và đa dạng với các mẫu thiết kế
+                độc đáo bắt mắt, thậm chí còn bắt kịp nhiều trào lưu xu hướng đặc biệt là phong cách Hàn Quốc.
+                Do đó, việc tìm hiểu tất tần tật về áo thun tay lỡ nam/nữ là cần thiết giúp bạn luôn cập nhật những mẫu
+                thiết kế mới nhất. Điều này sẽ giúp bạn có nhiều sự lựa chọn mới mẻ và đa dạng phong cách thời trang của
+                bạn.
+                <br>
+                <b>Vậy áo thun tay lỡ là gì?</b>
+                <br>
+                - Là loại áo phông có chiều dài tay áo dài hơn so với áo thun nam ngắn tay, thường là dài đến khuỷu tay
+                hoặc qua khuỷu tay.
+                <br>
+                - Kiểu áo phông tay lỡ này thường xuất hiện ở những thiết kế áo thun unisex oversize rộng rãi, thoáng
+                mát.
+                <br> - Loại áo này “khó tính” hơn áo thun nam nữ ngắn tay, nếu biết cách mix đồ, bạn sẽ trở nên thật cá
+                tính với phong cách thời trang đậm chất Hàn Quốc, nhưng nếu phối đồ không tốt trông bạn như đang “lọt
+                thỏm” trong chiếc áo thun tay lỡ.</p>
+        </div>
+    </div>
+    </div>
+    <!-- --tittle -->
+    <div class="small-container">
+
+        <div class="title-pd">
+            <h2>Sản phẩm liên quan</h2>
+            <a href="products.html">
+                <p>Xem thêm</p>
+            </a>
+        </div>
+
+
+    </div>
+    <!-- --product- -->
+    <div class="small-container">
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-1.jpg">
+                <h4>T-Shirt in Đỏ</h4>
+                <div class="rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star-empty"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-2.jpg">
+                <h4>Giày chạy bộ Đen</h4>
+                <div class="rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star-empty"></i>
+                </div>
+                <p>$75.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-3.jpg">
+                <h4>Quần dài Xám</h4>
+                <div class="rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star-empty"></i>
+                </div>
+                <p>$75.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-4.jpg">
+                <h4>Polo Shirt Xanh Đen</h4>
+                <div class="rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star-empty"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images\product-5.jpg">
+                <h4>Giày cổ cao Xám</h4>
+                <div class="rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star-empty"></i>
+                </div>
+                <p>$100.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-6.jpg">
+                <h4>T-Shirt in Đen</h4>
+                <div class="rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star-empty"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-7.jpg">
+                <h4>Vớ HRX</h4>
+                <div class="rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star-empty"></i>
+                </div>
+                <p>$15.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-8.jpg">
+                <h4>Đồng hồ Fossil Đen</h4>
+                <div class="rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star-empty"></i>
+                </div>
+                <p>$200.00</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!---------footer----------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Tải ứng dụng của chúng tôi</h3>
+                    <p>Tải ứng dụng cho thiết bị di động Android và IOS</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo.png">
+                    <p>Mục đính của chúng tôi là muốn mọi người có thể tiếp cận tới niềm vui và lợi ích của việc tập
+                        luyện thể thao</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Đường dẫn hữu ích</h3>
+                    <ul>
+                        <li>Giảm giá</li>
+                        <li>Blog</li>
+                        <li>Chính sách đổi trả</li>
+                        <li>Diễn đàn</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Theo dõi chúng tôi</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020</p>
+        </div>
+    </div>
+
+
+    <script src="product-detail.js"></script>
+
+</body>
+
+</html>

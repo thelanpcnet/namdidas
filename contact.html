@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Liên hệ</title>
+
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
+        rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="navbar" style="background:white; ">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" width="125px"></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="products.html">Sản phẩm</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+                <li><a href="account.html">Tài khoản</a></li>
+            </ul>
+        </nav>
+        <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+    <!--------------content---------------->
+
+    <div class="contact-content">
+        <h1 class="headerct">LIÊN HỆ VỚI CHÚNG TÔI</h1>
+        <div class="ctt">
+            <p> &emsp;Trang web bán hàng <b>namdidas</b> là sự nổ lực không ngơi nghỉ của tất cả các sếp,
+                phải kể đến 3 thành viên nòng cốt như:</p>
+            <div class="info-box">
+                <br>
+                <p><b>&ensp;&ensp; &#9679; Trương Văn Sữu. &emsp;&ensp;&ensp;MSSV: 15520743</b></p>
+                <p><b>&ensp;&ensp; &#9679; Nguyễn Ngọc Nam.&emsp; MSSV: 18520315</b></p>
+                <p><b>&ensp;&ensp; &#9679; Trương Thế Lân. &emsp;&emsp;&ensp;MSSV: 18520297</b></p>
+                <br>
+            </div>
+
+            <p>&ensp;&ensp;Cảm ơn các bạn đã ghé thăm cửa hàng của chúng tôi, mọi khó khăn xin liên hệ: &ensp; <b>
+                    <RedStore@gmail class="com">nonreply@gmail.com</RedStore@gmail>
+                </b></p>
+            <br>
+            <h3>Địa chỉ cửa hàng:</h3>
+            <p>&ensp;&ensp;43 Ng.Chí Thanh, Hưng Định, Thuận An, Bình Dương
+            </p>
+            <br>
+            <div id="map" style="width:800px;height:450px"></div>
+        </div>
+    </div>
+
+
+
+    <!---------footer----------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Tải ứng dụng của chúng tôi</h3>
+                    <p>Tải ứng dụng cho thiết bị di động Android và IOS</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo.png">
+                    <p>Mục đính của chúng tôi là muốn mọi người có thể tiếp cận tới niềm vui và lợi ích của việc tập
+                        luyện thể thao</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Đường dẫn hữu ích</h3>
+                    <ul>
+                        <li>Giảm giá</li>
+                        <li>Blog</li>
+                        <li>Chính sách đổi trả</li>
+                        <li>Diễn đàn</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Theo dõi chúng tôi</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020</p>
+        </div>
+    </div>
+    <script>
+        function myMap() {
+            var mapOptions = {
+                center: new google.maps.LatLng(51.5, -0.12),
+                zoom: 10,
+                mapTypeId: google.maps.MapTypeId.HYBRID
+            }
+            var map = new google.maps.Map(document.getElementById("map"), mapOptions)
+        };
+    </script>
+
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
+
+</html>
